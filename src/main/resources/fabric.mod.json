@@ -15,6 +15,7 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
+			"com.gittyaulia.batsreconfig.command.BatsReconfigCommands",
 			"com.gittyaulia.batsreconfig.BatsReconfig"
 		]
 	},
