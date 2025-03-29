@@ -1,5 +1,6 @@
 # A server-side fabric mod that reconfigures bat spawns
 This mod prevents new spawns instead of killing spawns that go beyond the custom limits.
+
 Available on: 
 - Modrinth: https://modrinth.com/mod/bats-reconfig
 - Curseforge: https://www.curseforge.com/minecraft/mc-mods/bats-reconfig
