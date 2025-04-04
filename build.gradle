@@ -31,7 +31,7 @@ dependencies {
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
 	// Config
-	modImplementation "com.craftjakob:configapi-fabric:${project.minecraft_version}-${configapi_version}"
+	modImplementation "com.craftjakob:configapi-fabric:1.21.4-${configapi_version}"
 }
 
 processResources {

@@ -10,7 +10,13 @@ public class ModConfigBuilder implements IConfigurator {
 
     @Override
     public void configure(com.craftjakob.configapi.config.ConfigBuilder builder) {
-        batYLevelCap = builder.requiresWorldRestart().defineInRange("batYLevelCap", -32, -64, 320);
-        ambientSpawnCap = builder.requiresWorldRestart().defineInRange("ambientSpawnCap", 8, 0, 70);
+        batYLevelCap = builder
+                .comment("Maximum y level bats can spawn")
+                .requiresWorldRestart()
+                .defineInRange("batYLevelCap", -32, -64, 320);
+        ambientSpawnCap = builder
+                .comment("Maximum number of ambient spawns (includes only bats)")
+                .requiresWorldRestart()
+                .defineInRange("ambientSpawnCap", 8, 0, 70);
     }
 }
