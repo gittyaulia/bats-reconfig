@@ -41,9 +41,14 @@ public class SpawnGroupMixin {
 
             return spawnGroupCapacity;
 
+        } else if (ambientSpawnCapacityCustom != null) {
+
+            return ambientSpawnCapacityCustom;
+
         } else {
 
-            return Objects.requireNonNullElse(ambientSpawnCapacityCustom, ambientSpawnCapacityDefault);
+            log.error("Bats spawn capacity set as null in config file");
+            return ambientSpawnCapacityDefault;
         }
 
     }

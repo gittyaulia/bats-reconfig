@@ -21,8 +21,8 @@ public class BatsReconfig implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 
-		ConfigRegister.get().registerConfig(MOD_ID, ConfigType.COMMON, ModConfigBuilder::new);
+		ConfigRegister.registerConfig(MOD_ID, ConfigType.COMMON, ModConfigBuilder::new);
 
-        LOGGER.info("Hello Fabric world!");
+        LOGGER.info("Hello from Bats Reconfig Mod!");
 	}
 }

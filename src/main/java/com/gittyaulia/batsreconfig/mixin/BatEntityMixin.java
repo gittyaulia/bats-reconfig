@@ -30,9 +30,12 @@ public class BatEntityMixin {
 		if (yLevelCapCustom != null) {
 
 			return yLevelCapCustom;
+
 		} else {
+
 			log.error("Bats y level set as null in config file");
 			return seaYLevel;
+
 		}
 
 	}
